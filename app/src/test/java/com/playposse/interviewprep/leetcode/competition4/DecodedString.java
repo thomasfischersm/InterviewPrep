@@ -64,7 +64,7 @@ public class DecodedString {
                     if (multipliedLength <= K) {
                         int thisLength = getLength(str, endIndex);
 //                        return "" + str.charAt((K - multipliedLength) + i + 1);
-                        return "" + str.charAt(endIndex - (thisLength - K) + 1);
+                        return "" + str.charAt(endIndex - thisLength + K + 1);
                     }
 
                     K = K % segmentLength;
